@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="../libraries/fontawesome5/css/fontawesome-all.min.css" />
+  <style>
+    body {
+        background-color:#EEEEEE;
+    }
+    .todolist {
+        background-color:#FFF;
+        padding:20px 20px 10px 20px;
+        margin-top:30px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin: 0;
+      padding-bottom: 20px;
+    }
+    
+    li.ui-state-default{
+        background:#fff;
+        border:none;
+        border-bottom:1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    li.ui-state-default:last-child{
+        border-bottom:none;
+    }
+
+    .todo-footer{
+        background-color:#F4FCE8;
+        margin:0 -20px -10px -20px;
+        padding: 10px 20px;
+    }
+    #done-items li{
+        padding:10px 0;
+        border-bottom:1px solid #ddd;
+        text-decoration:line-through;
+    }
+    #done-items li:last-child{
+        border-bottom:none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="todolist not-done">
+               <h1>Todos</h1>
+                  <input type="text" class="form-control add-todo" placeholder="Add todo">
+                  
+                    <button class="btn btn-success" style="margin-top: 10px">Mark all as done</button>
+                      
+                    <hr>
+                    <ul id="sortable" class="list-unstyled">
+                      <li class="ui-state-default">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" />
+                          <label class="form-check-label">Take out the trash</label>
+                        </div>
+                      </li>
+                      <li class="ui-state-default">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" />
+                            <label class="form-check-label">Buy bread</label>
+                          </div>
+                      </li>
+                      <li class="ui-state-default">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" />
+                          <label class="form-check-label">Teach penguins to fly</label>
+                        </div>
+                      </li>
+                  </ul>
+                  <div class="todo-footer">
+                      <strong><span class="count-todos"></span></strong> Items Left
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="todolist">
+               <h1>Already Done</h1>
+                  <ul id="done-items" class="list-unstyled">
+                      <li>
+                        Some item
+                        <button class="remove-item btn btn-default btn-xs float-right"><span class="far fa-times-circle"></span></button>
+                      </li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+
+</html>

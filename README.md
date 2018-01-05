@@ -11,7 +11,11 @@ Learning React can get awfully complicated. Flux, Redux, server side rendering, 
 5. [React DevTools browser extension](https://github.com/facebook/react-devtools)
 6. [Redux DevTools browser extension](https://github.com/zalmoxisus/redux-devtools-extension)
 
-## 
+## Libraries
+
+Offline copies of some libraries used to make it easy for the class, no CDN requests, npm/bower installs, etc.
+
+1. Font Awesome 5 (`/libraries/fontawesome5`)
 
 # NOTE FOR CODEMASHERS
 

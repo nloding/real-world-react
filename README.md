@@ -1,3 +1,9 @@
+# IMPORTANT NOTE FOR CODEMASHERS
+
+The last example in the code, the "real world" app, is not yet complete, and I owe you deep apologies. It's coming as soon as soon as I can resolve a couple issues with it.
+All my fault. Feel free to berate me at the start of the precompiler! Follow this repo or check the #precompiler room on Slack for a notification when it goes up.
+
+
 # Real-world React from the ground up
 
 Learning React can get awfully complicated. Flux, Redux, server side rendering, React Native, higher order components, functions as child components, CSS in JS, and more. Let's simplify the equation: build a real world application using React and Redux, learning patterns and practices to make reusable, composable components as we go. Whether you are brand new to React or have some experience with it, you should walk away with a solid understanding of how to compose React applications.
@@ -17,7 +23,9 @@ Offline copies of some libraries used to make it easy for the session (no CDN re
 
 1. Font Awesome 5 (`/libraries/fontawesome5`)
 
-# NOTE FOR CODEMASHERS
+## First steps
 
-The code will be available in this repository on or before Jan 5, giving you time to clone the complete repo before CodeMash even begins! Watch the repo if you want an
-alert when the code goes live, or check the CodeMash Slack.
+1. All examples are based off `create-react-app`, so refer to its documentation for any changes you want to make.
+2. For any example you want to run, open that directory and run `npm install` or `yarn`, then `npm start` or `yarn start`
+3. If your browser doesn't automatically open, launch `http://localhost:3000` to view the site
+4. I apologize for the mix of semicolons and not ... no semicolons is a thing I do now

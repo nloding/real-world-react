@@ -1,17 +1,21 @@
 import React from 'react';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import forEach from 'lodash/forEach'
+import map from 'lodash/map'
 
-import TodoList from './TodoList';
+import TodoList from '../components/TodoList';
 
 import * as todoActions from '../actions'
+import { addTodo, completeTodo, completeAll, readdTodo } from '../actions'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     
-    this.setState({ todo: '' })
+    this.onTodoChange = this.onTodoChange.bind(this)
+    this.addTodo = this.addTodo.bind(this)
+    
+    this.state = { todo: '' }
   }
   
   onTodoChange(e) {
@@ -41,7 +45,7 @@ class App extends React.Component {
               <TodoList todos={this.props.active} callback={this.props.completeTodo} />
               
               <div className="todo-footer">
-                <strong>{todos.length}</strong> Items Left
+                <strong>{this.props.active.length}</strong> Items Left
               </div>
             </div>
           </div>
@@ -58,8 +62,8 @@ class App extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  completed: forEach(state.completed, todoId => return state.todos[todoId]),
-  active: forEach(state.active, todoId => return state.todos[todoId]),
+  completed: map(state.todos.completed, todoId => state.todos.todos[todoId]),
+  active: map(state.todos.active, todoId => state.todos.todos[todoId])
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -69,5 +73,5 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   // mapDispatchToProps
-  { todoActions.addTodo, todoActions.completeTodo, todoActions.completeAll, todoActions.readdTodo }
+  { addTodo, completeTodo, completeAll, readdTodo }
 )(App);

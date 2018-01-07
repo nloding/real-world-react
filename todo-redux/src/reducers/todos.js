@@ -7,8 +7,8 @@ import * as types from '../actions/types'
 
 export default function todos(state = initialState, action) {
   switch (action.type) {
-    case ADD_TODO: {
-      const ids = Object.keys(state.todos)
+    case types.ADD_TODO: {
+      const ids = Object.keys(state.todos) || []
       const nextId = ids.reduce((maxId, todo) => Math.max(todo.id, maxId), -1) + 1
       return {
         todos: {
@@ -26,11 +26,11 @@ export default function todos(state = initialState, action) {
       }
     }
 
-    case COMPLETE_TODO: {
+    case types.COMPLETE_TODO: {
       action.todo.completed = true
       
-      let active = state.active.splice() // note: this isn't deep, so keep that in mind
-      remove(active, todo => todo.id === action.todo.id)
+      let active = state.active.slice() // note: this isn't deep, so keep that in mind
+      remove(active, todoId => todoId === action.todo.id)
       
       return {
         todos: {
@@ -45,7 +45,7 @@ export default function todos(state = initialState, action) {
       }
     }
 
-    case COMPLETE_ALL:
+    case types.COMPLETE_ALL:
       const todos = forEach(state.todos, todo => {
         todo.completed = true
         return todo
@@ -53,14 +53,14 @@ export default function todos(state = initialState, action) {
       return {
         todos,
         completed: map(todos, 'id'),
-        action: []
+        active: []
       }
       
-    case READD_TODO: {
+    case types.READD_TODO: {
       action.todo.completed = false
       
-      let completed = state.completed.splice() // note: this isn't deep, so keep that in mind
-      remove(completed, todo => todo.id === action.todo.id)
+      let completed = state.completed.slice() // note: this isn't deep, so keep that in mind
+      remove(completed, todoId => todoId === action.todo.id)
       
       return {
         todos: {

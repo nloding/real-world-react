@@ -9,7 +9,9 @@
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-redux": "^5.0.5",
+    "redux": "^3.5.2"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",

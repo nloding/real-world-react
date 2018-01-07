@@ -8,8 +8,8 @@ import * as types from '../actions/types'
 export default function todos(state = initialState, action) {
   switch (action.type) {
     case types.ADD_TODO: {
-      const ids = Object.keys(state.todos) || []
-      const nextId = ids.reduce((maxId, todo) => Math.max(todo.id, maxId), -1) + 1
+      const ids = Object.keys(state.todos)
+      const nextId = ids.reduce((maxId, todoId) => Math.max(todoId, maxId), -1) + 1
       return {
         todos: {
           ...state.todos,
@@ -22,7 +22,8 @@ export default function todos(state = initialState, action) {
         active: [
           ...state.active,
           nextId
-        ]
+        ],
+        completed: [...state.completed]
       }
     }
 

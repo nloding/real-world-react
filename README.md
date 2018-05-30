@@ -11,7 +11,7 @@ Nathan Loding - more bio to come!
 
 ## Slides
 
-You can view the most current version of the slides for this workshop [here](http://nloding.com/real-world-react-slides) or you can grab your own copy to run locally [here](https://github.com/nloding/real-world-react-slides)
+~~You can view the most current version of the slides for this workshop [here](http://github.com/nloding/real-world-react-slides) or~~ you can grab your own copy to run locally [here](https://github.com/nloding/real-world-react-slides)
 
 
 ## First steps

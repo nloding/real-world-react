@@ -1,0 +1,50 @@
+{
+  "name": "conduit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
+    "eslint": "4.15.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-loader": "2.0.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.8.2",
+    "joi": "^13.3.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "1.1.4",
+    "reactstrap": "^6.0.1",
+    "redux": "^4.0.0",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-thunk": "^2.2.0",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.80.0",
+    "styled-components": "^3.2.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  }
+}

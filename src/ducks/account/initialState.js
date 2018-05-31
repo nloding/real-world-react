@@ -1,4 +1,4 @@
 export default {
   status: 'logged_out',
-  user: {},
+  user: null,
 }

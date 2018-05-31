@@ -1,23 +1,20 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
+import Article from './views/article'
 import Home from './views/home'
 import Layout from './views/layout'
 import Login from './views/login'
 
 const App = ({ user }) => (
-  <Layout user={user}>
+  <Layout>
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route path="/article/:slug" component={Article} />
       <Route path="/login" component={Login} />
-      <Redirect to="/" />
+      <Route render={() => <Redirect to="/" />} />
     </Switch>
   </Layout>
 )
 
-export { App }
-
-export default connect(
-  state => ({ user: state.account.user })
-)(App)
+export default App

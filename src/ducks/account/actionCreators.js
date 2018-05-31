@@ -10,7 +10,7 @@ export const logIn = (email, password) => dispatch => (
   AuthApi.login(email, password)
     .then(
       result => {
-        window.localStorage.setItem('jwt', result.data.user.token)
+        window.sessionStorage.setItem('jwt', result.data.user.token)
 
         dispatch(setUser(result.data.user))
         dispatch(push('/'))

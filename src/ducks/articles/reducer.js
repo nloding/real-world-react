@@ -7,14 +7,15 @@ export default function reducer(state = initialState, action) {
 
       /* exercise: better normalize this state by feed */
       /* hint: */
-      // const keyedArticles =
-      //   action.payload.articles.reduce((acc, article) => {
-      //     acc[article.id] = article
-      //     return acc
-      //   }, {})
-      console.log(action.payload)
+      const keyedArticles =
+        action.payload.articles.articles.reduce((acc, article) => {
+          acc[article.slug] = article
+          return acc
+        }, {})
+
       return {
         ...state,
+        articles: keyedArticles,
         unnormalizedArticles: [
           ...state.unnormalizedArticles,
           ...action.payload.articles.articles

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 import {
   Button,
   Container,
@@ -17,13 +18,13 @@ const UnauthenticatedMenu = () => (
   </React.Fragment>
 )
 
-const AuthenticatedMenu = (user) => (
+const AuthenticatedMenu = ({ user }) => (
   <React.Fragment>
     <Menu.Item as={Link} to="/post">
       <Icon name="edit" />
       New Post
     </Menu.Item>
-    <Dropdown item simple text={"user name"}>
+    <Dropdown item simple text={user.username}>
       <Dropdown.Menu>
         <Dropdown.Item as={Link} to="/profile">Profile</Dropdown.Item>
         <Dropdown.Item as={Link} to="/logout">Log Out</Dropdown.Item>
@@ -80,7 +81,7 @@ const Layout = ({ user, children }) => (
 
           <Menu.Menu position="right">
             {!user && <UnauthenticatedMenu />}
-            {user && <AuthenticatedMenu />}
+            {user && <AuthenticatedMenu user={user} />}
           </Menu.Menu>
         </Container>
       </Menu>
@@ -96,4 +97,8 @@ const Layout = ({ user, children }) => (
   </React.Fragment>
 )
 
-export default Layout
+export { Layout }
+
+export default connect(
+  state => ({ user: state.account.user })
+)(Layout)

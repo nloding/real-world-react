@@ -1,0 +1,287 @@
+/* default styles from realworld.io repo */
+
+.tag-default {
+  color: #fff !important;
+  font-size: 0.8rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  white-space: nowrap;
+  margin-right: 3px;
+  margin-bottom: 0.2rem;
+  display: inline-block; }
+  .tag-default:hover {
+    text-decoration: none; }
+  .tag-default.tag-outline {
+    border: 1px solid #ddd;
+    color: #aaa !important;
+    background: none !important; }
+
+.tag-pill {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 10px;
+}
+
+ul.tag-list {
+  padding-left: 0px !important;
+  display: inline-block;
+  list-style: none !important; }
+  ul.tag-list li {
+    display: inline-block !important; }
+
+.navbar-brand {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5rem !important;
+  padding-top: 0rem !important;
+  margin-right: 2rem !important;
+  color: #5CB85C !important; }
+
+.nav-link .user-pic {
+  height: 26px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 5px; }
+
+.nav-link:hover {
+  transition: 0.1s all; }
+
+.nav-pills.outline-active .nav-link {
+  border-radius: 0px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #aaa; }
+  .nav-pills.outline-active .nav-link:hover {
+    color: #555; }
+  .nav-pills.outline-active .nav-link.active {
+    background: #fff !important;
+    border-bottom: 2px solid #5CB85C !important;
+    color: #5CB85C !important; }
+
+footer {
+  background: #f3f3f3;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  footer .logo-font {
+    vertical-align: middle; }
+  footer .attribution {
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    color: #bbb;
+    font-weight: 300; }
+
+.error-messages {
+  color: #B85C5C !important;
+  font-weight: bold; }
+
+.banner {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  margin-bottom: 2rem; }
+  .banner h1 {
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0px; }
+
+.container.page {
+  margin-top: 1.5rem; }
+
+.preview-link {
+  color: inherit !important; }
+  .preview-link:hover {
+    text-decoration: inherit !important; }
+
+.article-meta {
+  display: block;
+  position: relative;
+  font-weight: 300; }
+  .article-meta img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+    width: 32px;
+    border-radius: 30px; }
+  .article-meta .info {
+    margin: 0 1.5rem 0 0.3rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1rem; }
+    .article-meta .info .author {
+      display: block;
+      font-weight: 500 !important; }
+    .article-meta .info .date {
+      color: #bbb;
+      font-size: 0.8rem;
+      display: block; }
+
+.article-preview {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0; }
+  .article-preview .article-meta {
+    margin: 0 0 1rem 0; }
+  .article-preview .preview-link h1 {
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 3px; }
+  .article-preview .preview-link p {
+    font-weight: 300;
+    font-size: 24px;
+    color: #999;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.3rem; }
+  .article-preview .preview-link span {
+    max-width: 30%;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #bbb;
+    vertical-align: middle; }
+  .article-preview .preview-link ul {
+    float: right;
+    max-width: 50%;
+    vertical-align: top; }
+    .article-preview .preview-link ul li {
+      font-weight: 300;
+      font-size: 0.8rem !important;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important; }
+
+.btn .counter {
+  font-size: 0.8rem !important; }
+
+.home-page .banner {
+  background: #5CB85C;
+  box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.3), inset 0 -8px 8px -8px rgba(0, 0, 0, 0.3); }
+  .home-page .banner p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300 !important;
+    margin-bottom: 0px; }
+  .home-page .banner h1 {
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    font-weight: 700 !important;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 0.5rem; }
+
+.home-page .feed-toggle {
+  margin-bottom: -1px; }
+
+.home-page .sidebar {
+  padding: 5px 10px 10px 10px;
+  background: #f3f3f3;
+  border-radius: 4px; }
+  .home-page .sidebar p {
+    margin-bottom: 0.2rem; }
+
+.article-page .banner {
+  padding: 2rem 0 2rem 0; }
+  .article-page .banner h1 {
+    font-size: 2.8rem;
+    font-weight: 600; }
+  .article-page .banner .btn {
+    opacity: 0.8; }
+    .article-page .banner .btn:hover {
+      transition: 0.1s all;
+      opacity: 1; }
+  .article-page .banner .article-meta {
+    margin: 2rem 0 0 0; }
+    .article-page .banner .article-meta .author {
+      color: #fff; }
+
+.article-page .article-content p {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem; }
+
+.article-page .article-content h1, .article-page .article-content h2, .article-page .article-content h3, .article-page .article-content h4, .article-page .article-content h5, .article-page .article-content h6 {
+  font-weight: 500 !important;
+  margin: 1.6rem 0 1rem 0; }
+
+.article-page .article-actions {
+  text-align: center;
+  margin: 1.5rem 0 3rem 0; }
+  .article-page .article-actions .article-meta .info {
+    text-align: left; }
+
+.article-page .comment-form .card-block {
+  padding: 0; }
+  .article-page .comment-form .card-block textarea {
+    border: 0px;
+    padding: 1.25rem; }
+
+.article-page .comment-form .card-footer .btn {
+  font-weight: 700;
+  float: right; }
+
+.article-page .comment-form .card-footer .comment-author-img {
+  height: 30px;
+  width: 30px; }
+
+.article-page .card {
+  border: 1px solid #e5e5e5;
+  box-shadow: none !important; }
+  .article-page .card .card-footer {
+    border-top: 1px solid #e5e5e5;
+    box-shadow: none !important;
+    font-size: 0.8rem;
+    font-weight: 300; }
+  .article-page .card .comment-author-img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border-radius: 30px; }
+  .article-page .card .comment-author {
+    display: inline-block;
+    vertical-align: middle; }
+  .article-page .card .date-posted {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #bbb; }
+  .article-page .card .mod-options {
+    float: right;
+    color: #333;
+    font-size: 1rem; }
+    .article-page .card .mod-options i {
+      margin-left: 5px;
+      opacity: 0.6;
+      cursor: pointer; }
+      .article-page .card .mod-options i:hover {
+        opacity: 1; }
+
+.profile-page .user-info {
+  text-align: center;
+  background: #f3f3f3;
+  padding: 2rem 0 1rem 0; }
+  .profile-page .user-info .user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 1rem; }
+  .profile-page .user-info h4 {
+    font-weight: 700; }
+  .profile-page .user-info p {
+    margin: 0 auto 0.5rem auto;
+    color: #aaa;
+    max-width: 450px;
+    font-weight: 300; }
+  .profile-page .user-info .action-btn {
+    float: right;
+    color: #999;
+    border: 1px solid #999; }
+
+.profile-page .articles-toggle {
+  margin: 1.5rem 0 -1px 0; }
+
+.editor-page .tag-list i {
+  font-size: 0.6rem;
+  margin-right: 5px;
+  cursor: pointer; }

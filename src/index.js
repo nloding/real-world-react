@@ -9,6 +9,7 @@ import { store, history } from './store'
 
 // import our global css
 import 'semantic-ui-css/semantic.min.css'
+import './globalStyles.css'
 
 // import * as serviceWorker from './serviceWorker';
 

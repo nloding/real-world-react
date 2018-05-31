@@ -2,6 +2,8 @@ import axios from 'axios'
 
 import config from '../config'
 
+export const limit = (count, page) => `limit=${count}&offset=${page ? page * count : 0}`
+
 export default function(options = {}) {
   const defaultOptions = {
     baseURL: config.apiRoot,

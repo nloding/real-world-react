@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Form } from 'semantic-ui-react'
 
+// exercise: migrate to bootstrap ... hint: https://reactstrap.github.io/components/form/
+// import { FormGroup, Input, Label } from 'reactstrap'
+
 class TextInput extends React.Component {
   state = { error: false }
 
